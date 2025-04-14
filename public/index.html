@@ -1,9 +1,149 @@
-<!doctype html>
-<head>
-    <title> b l a n k </title>
-</head>
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>Icon Template Square</title>
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+    </head>
 
-<body>
-   <canvas id="cnv_element"></canvas>
-   <script src="script.js"></script>
-</body>
+    <body>
+
+        <div class="row">
+            <div class="image-container"><img id="bedroom_1_id" src="img/bedroom_1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="childhood_1_id" src="img/childhood_1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="wish_1_id"src="img/wish_1.png" height="200" width="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="inventory_1_id" src="img/inventory_1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="settings_1_id" src="img/settings_1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="puzzle_1_id" src="img/puzzle_1.png" height="200" width="200"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="memory_1_id" src="img/memory_1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="sleep_1_id" src="img/sleep_1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="story_1_id" src="img/story_1.png" height="200" width="200"/></div>
+        </div>
+        
+    </body>
+    
+</html>
+
+<script>
+     const bedroom_1_el = document.getElementById ('bedroom_1_id')
+    const bedroom_sound = new Audio ('sounds/bedroom_sound_01.mp3')
+    bedroom_1_el.onpointerdown = () => {
+        bedroom_1_el.src = 'img/bedroom_2.png'
+        bedroom_sound.play ()
+        setTimeout (() => {
+            bedroom_1_el.src = 'img/bedroom_1.png'
+        }, 1000)
+    }
+</script>
+
+<script>
+    const childhood_1_el = document.getElementById ('childhood_1_id')
+   const childhood_sound = new Audio ('sounds/childhood_sound_01.mp3')
+   childhood_1_el.onpointerdown = () => {
+    childhood_1_el.src = 'img/childhood_2.png'
+    childhood_sound.play ()
+       setTimeout (() => {
+        childhood_1_el.src = 'img/childhood_1.png'
+       }, 1000)
+   }
+</script>
+
+<script>
+    const wish_1_el = document.getElementById ('wish_1_id')
+   const wish_sound = new Audio ('sounds/wish_sound_01.mp3')
+   wish_1_el.onpointerdown = () => {
+    wish_1_el.src = 'img/wish_2.png'
+    wish_sound.play ()
+       setTimeout (() => {
+        wish_1_el.src = 'img/wish_1.png'
+       }, 1000)
+   }
+</script>
+
+<script>
+    const inventory_1_el = document.getElementById ('inventory_1_id')
+   const inventory_sound = new Audio ('sounds/inventory_sound_01.mp3')
+   inventory_1_el.onpointerdown = () => {
+    inventory_1_el.src = 'img/inventory_2.png'
+    inventory_sound.play ()
+       setTimeout (() => {
+        inventory_1_el.src = 'img/inventory_1.png'
+       }, 1000)
+   }
+</script>
+
+<script>
+    const settings_1_el = document.getElementById ('settings_1_id')
+   const settings_sound = new Audio ('sounds/settings_sound_01.mp3')
+   settings_1_el.onpointerdown = () => {
+    settings_1_el.src = 'img/settings_2.png'
+    settings_sound.play ()
+       setTimeout (() => {
+        settings_1_el.src = 'img/settings_1.png'
+       }, 1000)
+   }
+</script>
+
+<script>
+    const puzzle_1_el = document.getElementById ('puzzle_1_id')
+   const puzzle_sound = new Audio ('sounds/puzzle_sound_01.mp3')
+   puzzle_1_el.onpointerdown = () => {
+    puzzle_1_el.src = 'img/puzzle_2.png'
+    puzzle_sound.play ()
+       setTimeout (() => {
+        puzzle_1_el.src = 'img/puzzle_1.png'
+       }, 1000)
+   }
+</script>
+
+<script>
+    const memory_1_el = document.getElementById ('memory_1_id')
+   const memory_sound = new Audio ('sounds/memory_sound_01.mp3')
+   memory_1_el.onpointerdown = () => {
+    memory_1_el.src = 'img/memory_2.png'
+    memory_sound.play ()
+       setTimeout (() => {
+        memory_1_el.src = 'img/memory_1.png'
+       }, 1000)
+   }
+</script>
+
+<script>
+    const sleep_1_el = document.getElementById ('sleep_1_id')
+   const sleep_sound = new Audio ('sounds/sleep_sound_01.mp3')
+   sleep_1_el.onpointerdown = () => {
+    sleep_1_el.src = 'img/sleep_2.png'
+    sleep_sound.play ()
+       setTimeout (() => {
+        sleep_1_el.src = 'img/sleep_1.png'
+       }, 1000)
+   }
+</script>
+
+<script>
+    const story_1_el = document.getElementById ('story_1_id')
+   const story_sound = new Audio ('sounds/story_sound_01.mp3')
+   story_1_el.onpointerdown = () => {
+    story_1_el.src = 'img/story_2.png'
+    story_sound.play ()
+       setTimeout (() => {
+        story_1_el.src = 'img/story_1.png'
+       }, 1000)
+   }
+</script>
